@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>E-commerce product page</title>
+  </head>
+  <body>
+    <div id="cart_menue" class="cart_menue">
+      <div class="title_cart">
+        <h2>Cart</h2>
+        <img
+          src="images/icon-close.svg"
+          alt=""
+          onclick="open_close_cart_menue()"
+        />
+      </div>
+      <div class="containet_cart_prodect">
+              <div class="image_cart">
+        <img src="images/image-product-1.jpg" alt="">
+      </div>
+      <div class="text_container">
+        <h5> Fall Limited Edition Sneakers</h5>
+        <span class="span_color">$125</span>
+        <span class="span_color">x</span>
+        <span class="span_colo quantity_cart">1</span>
+        <span>total : $<span class="total"></span></span>
+      </div>
+      <div class="trash">
+        <img src="images/icon-delete.svg" alt="">
+      </div>
+    </div>
+    
+    <div class="button">
+      <button>Check out</button>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+
+        </div>
+       
+
+        <ul class="nave">
+          <span class="close_menue" onclick="close()" ><img src="images/icon-close.svg" alt=""></span>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+         <img onclick="close()" src="images/icon-menu.svg" alt="" class="menu">
+
+        <div class="cart_img">
+          <img
+            src="images/icon-cart.svg"
+            alt=""
+            onclick="open_close_cart_menue()"
+          />
+
+          <img src="images/image-avatar.png" alt="" class="image_man" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section_1">
+      <div class="container">
+        <div class="images">
+          <img src="images/image-product-1.jpg" alt="" class="big_image" />
+          <div class="container_images_small">
+            <img
+              src="images/image-product-1.jpg"
+              alt=""
+              onclick="show_images(this.src)"
+            />
+            <img
+              src="images/image-product-2.jpg"
+              alt=""
+              onclick="show_images(this.src)"
+            />
+            <img class="image_hidden"
+              src="images/image-product-3.jpg"
+              alt=""
+              onclick="show_images(this.src)"
+            />
+            <img class="image_hidden"
+              src="images/image-product-4.jpg"
+              alt=""
+              onclick="show_images(this.src)"
+            />
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="content_container">
+          <div class="container_text">
+            <h5>Sneaker Company</h5>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+          </div>
+          <div class="price">
+            <h3>$125.00 <span>50%</span></h3>
+            <h6>$250.00</h6>
+          </div>
+          <div class="btn_add">
+            <div class="btn_icreasse">
+              <button class="decrese_btn btn">-</button>
+              <span class="quantity">1</span>
+              <button class="increse_btn btn">+</button>
+            </div>
+            <button class="add_to_cart">
+              <span><img src="images/icon-cart.svg" alt="" /></span>Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <div class="show_prodect">
+      <div class="contaainer">
+        <span><img src="images/icon-close.svg" alt="" onclick="close_open()"/></span>
+        <div class="div_content_prodect">
+          <img src="images/image-product-1.jpg" alt="" id="image_prodect" />
+          <div class="container_img">
+            <img
+              src="images/image-product-1.jpg"
+              alt=""
+              onclick="show_images_pro(this.src)"
+            />
+            <img
+              src="images/image-product-2.jpg"
+              alt=""
+              onclick="show_images_pro(this.src)"
+            />
+            <img
+              src="images/image-product-3.jpg"
+              alt=""
+              onclick="show_images_pro(this.src)"
+            />
+            <img
+              src="images/image-product-4.jpg"
+              alt=""
+              onclick="show_images_pro(this.src)" class="moka"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        Coded by <a href="https://github.com/bakrelsaued9-hub" target="_blank">Bakr Elsayed</a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
